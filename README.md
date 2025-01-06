@@ -3,6 +3,7 @@
 This script automatically updates and upgrades the Linux distro system using Apt. It checks if a reboot is required after upgrading and, if necessary, reboots the system.
 
 ### Features
+- **Initialize script**: Setup script 
 - **Daily updates**: Runs `apt update` and `apt full-upgrade`.
 - **Cleanup**: Removes obsolete packages to save space.
 - **Automatic reboot**: Reboots the system if a reboot is required.
@@ -24,19 +25,23 @@ This script automatically updates and upgrades the Linux distro system using Apt
 2. **Navigate to the cloned directory**:
    ```bash
    cd Apt-auto-script
-3. **Move the script to you're prefered location (mine is /usr/local/bin/)**
+3. **Set execute permission for the script**
    ```bash
-   sudo mv update-upgrade.sh /usr/local/bin/
-4. **Set execute permission for the script**
+   sudo chmod +x /usr/local/bin/setup.sh
+4. **Execute the setup script**
    ```bash
-   sudo chmod +x /usr/local/bin/update-upgrade.sh
+   sudo /usr/local/bin/setup.sh
 
 ## Additionnal information
 
+**Cron is installed if not present**:
+   ```bash
+   sudo apt install cron -y
+   ```
 **The cron job added is** :
    ```bash
    0 0 * * * /usr/local/bin/update-upgrade.sh >> /var/log/auto-upgrade.log 2>&1
    ```
-   **Check the logs** :
+**Check the logs** :
    ```bash
     tail -f /var/log/auto-upgrade.log
