@@ -20,7 +20,7 @@ This script automatically updates and upgrades the Linux distro system using Apt
 1. **Clone the repository from GitHub**:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Emilca1/Apt-auto-script.git
 2. **Navigate to the cloned directory**:
    ```bash
    cd Apt-auto-script
