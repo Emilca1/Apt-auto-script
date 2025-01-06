@@ -27,10 +27,10 @@ This script automatically updates and upgrades the Linux distro system using Apt
    cd Apt-auto-script
 3. **Set execute permission for the script**
    ```bash
-   sudo chmod +x /usr/local/bin/setup.sh
+   sudo chmod +x setup.sh
 4. **Execute the setup script**
    ```bash
-   sudo /usr/local/bin/setup.sh
+   sudo setup.sh
 
 ## Additionnal information
 
