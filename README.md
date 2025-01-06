@@ -29,13 +29,13 @@ This script automatically updates and upgrades the Linux distro system using Apt
    sudo mv update-upgrade.sh /usr/local/bin/
 4. **Set execute permission for the script**
    ```bash
-   sudo chmod +x /usr/local/bin/update-and-upgrade.sh
+   sudo chmod +x /usr/local/bin/update-upgrade.sh
 
 ## Additionnal information
 
 **The cron job added is** :
    ```bash
-   0 0 * * * /usr/local/bin/update-and-upgrade.sh >> /var/log/auto-upgrade.log 2>&1
+   0 0 * * * /usr/local/bin/update-upgrade.sh >> /var/log/auto-upgrade.log 2>&1
    ```
    **Check the logs** :
    ```bash
