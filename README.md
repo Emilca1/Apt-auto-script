@@ -30,7 +30,7 @@ This script automatically updates and upgrades the Linux distro system using Apt
    sudo chmod +x setup.sh
 4. **Execute the setup script**
    ```bash
-   sudo setup.sh
+   sudo bash setup.sh
 
 ## Additionnal information
 
